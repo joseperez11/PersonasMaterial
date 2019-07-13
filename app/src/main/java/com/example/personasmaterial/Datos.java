@@ -18,7 +18,7 @@ public class Datos {
 
 
     public static void editar (Persona p){
-        databaseReference.child(db).child(p.getId()).removeValue(p);
+        databaseReference.child(db).child(p.getId()).setValue(p);
 
     }
 
